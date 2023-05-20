@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <!-- Using Array Method  -->
+
+    <script type="text/javascript">
+
+        // Pop Method
+        // The last element of the array will be removed 
+        const am1 = ["Angular js", "Node js","Jquery"];
+        document.write("<h3>POP METHOD</h3></br>");
+        document.write("Array is : <b>"+am1+"</b></br>");
+        am1.pop();
+        document.write("Array after pop : <b>"+am1+"</b></br></br>");
+
+
+        // Push Method
+        // Add last element of Array
+        const am2 = ["Angular js", "Node js"];
+        document.write("<h3>PUSH METHOD</h3></br>");
+        document.write("Array is : <b>"+am2+"</b></br>");
+        am2.push("JQuery");
+        document.write("Array after pushed : <b>"+am2+"</b></br></br>");
+
+        // Shift Method
+        // Remove the first element of Array
+        document.write("<h3>SHIFT METHOD</h3>");
+        var Arr = ["Php","Node","Javascript","Reactjs","Flutter"];
+        document.write("Array is :<b>"+Arr+"</b></br>");
+        Arr.shift();
+        document.write(" Array after shift : <b>"+Arr+"</b></br></br>");
+
+        // Unshift Method
+        // Add New element to the start position of an Array
+        document.write("<h3>UNSHIFT METHOD</h3>");
+        var Arr = ["Php","Node","Javascript","Reactjs","Flutter"];
+        document.write("Array is :<b>"+Arr+"</b></br>");
+        Arr.unshift("Andoid");
+        document.write(" Array after unshift : <b>"+Arr+"</b></br></br>");
+
+        // Concat Method
+        // A new Array by concatenating existing Array
+        document.write("<h3>CONCAT METHOD</h3>");
+        var arr1 = ["Angular js","Node js"];
+        var arr2 = ["Javascript","React js"];
+        var ans = arr1.concat(arr2);
+        document.write("1st array : <b>" + arr1 + "</b></br>")
+        document.write("2nd array : <b>" + arr2+ "</b></br>");
+        document.write("Array afrer Concate : <b> "+ans+"</b></br></br>");
+
+        // Sort Method
+        // sort is convert array in alphabetically
+        document.write("<h3>SORT METHOD</h3>");
+        var arr = ["C","java","flutter","node.js","php","ruby"];
+        document.write("Array is : <b>"+arr+"</b></br>");
+        var result = arr.sort();
+        document.write("Array after sort : <b> "+result+"</b></br></br>");
+
+
+        // Splice Method
+        // This method can be used to remove array elements at position
+        document.write("<h3>SPLICE METHOD</h3>");
+        var arr = ["Php","Node","Javascript","Reactjs","Flutter"];
+        document.write("Array is : <b>"+arr+"</b></br>");
+        arr.splice(2,1);   
+        // First parameter is position 
+        // secound parameter is how many delete array elements
+        document.write("Array after splice : <b> "+arr+"</b></br></br>");
+
+
+        // Slice Method
+        // This method use conver an array into new array
+        document.write("<h3>SLICE METHOD</h3>");
+        var arr = ["Php","Node","Javascript","Reactjs","Flutter"];
+        //          0      1         2          3         4
+        document.write("Array is : <b>"+arr+"</b></br>");
+        var ans = arr.slice(2);
+        document.write("Array after Slice : <b> "+ans+"</b></br></br>");
+
+
+        // Length Method
+        // Count all array element
+        document.write("<h3>LENGTH METHOD</h3>");
+        var arr = ["Php","Node","Javascript","Reactjs","Flutter"];
+        //           1      2        3           4          5
+        document.write("Array is : <b>"+arr+"</b></br>");
+        document.write("Array after length : <b> "+arr.length+"</b></br></br>");
+
+        // Array to String
+        // convert array to string 
+        document.write("<h3>TO STRING</h3>");
+        var arr = ["Php","Node","Javascript","Reactjs","Flutter"];
+        document.write("Array is : <b>"+arr+"</b></br>");
+        var ans = arr.toString();
+        document.write("Array after tostring : <b> "+ans+"</b></br></br>");
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

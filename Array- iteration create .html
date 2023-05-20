@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Iterations Method</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // forEach
+            // calls a function once for each array element.(a callback function) 
+            const numbers = [1,2,3,4,5];
+
+            document.write("<h3>FOE EACH</h3>");    
+            numbers.forEach(myFunction);    
+            function myFunction(numbers){    
+                document.write(numbers+"</br>");
+            }
+
+            // Map
+            // create a new array 
+            document.write("<h3>MAP</h3>");   
+            numbers.map(myFunction); 
+            function myFunction(numbers){
+                document.write(numbers+"</br>");
+            }
+
+            // reduce (reduce right)
+            // runs a function on each array element to produce (reduce it to) a single value
+            document.write("<h3>REDUCE</h3>"); 
+            let sum = numbers.reduce(reducemethod);
+            document.write("Array is : <b>"+numbers+"</b></br>");
+            document.write("Sum of this Array is : <b>" +sum+ "</b></br>");
+            function reducemethod(total,sum){
+                return total + sum;
+            }
+
+            // Array from method
+            // returns an Array object from any object with a length property or any iterable object
+            document.write("<h3>ARRAY.FROM</h3>"); 
+            let number = ("432657");
+            let myArr = Array.from(number);
+            document.write("String is :<b>"+number+"</b></br>");
+            document.write("Array after from a string : <b> "+myArr+"</b></br>");
+
+            // key method
+            // returns an Array Iterator object with the keys of an array
+            document.write("<h3>KEYS METHOD</h3>"); 
+            let keymethod = numbers.keys();
+            let text = "";
+            for (let x=0 ; x <numbers.length ; x++){
+                text += x + ",";
+            }
+                document.write("Array is : <b>" +numbers+"</b></br>");
+                document.write("Keys of this Array : <b>"+text);
+
+
+            // Find Method
+            // returns the value of the first array element that passes a test function
+            document.write("<h3>FIND METHOD</h3>"); 
+            let find_method = numbers.find(findmethod);
+            document.write("Array is : <b>"+numbers+"</b></br>");
+            document.write("First element in the array is grater than 0 is : <b>"+find_method+"</b></br>");
+            function findmethod(find){
+                return find > 0;
+            }
+
+
+            // Every Method
+            // checks if all array values pass a test
+            document.write("<h3>EVERY METHOD</h3>"); 
+            let every_method = numbers.every(everymethod);
+            document.write("Array is : <b>"+numbers+"</b></br>");
+            document.write("It checks if all array element : </br>Ans is : <b>"+every_method+"</b></br>");
+            function everymethod(ever){
+                return ever < 10; //if checks all element of array is less than 10 using the condition ever < 10.
+                // if the condition is true ,the function return true , otherwise it returns false.
+            }
+            
+
+            // Some Method
+            // checks if some array values pass a test
+            document.write("<h3>SOME METHOD</h3>"); 
+            let some_method = numbers.some(somemethod);
+            document.write("Array is : <b>"+numbers+"</b></br>");
+            document.write("It checks if some array element : </br> Ans is :<b>"+some_method+"</b></br>");
+            function somemethod(some){
+                return some > 10;
+            }
+  
+        </script>
+
+
+    </body>
+</html>
